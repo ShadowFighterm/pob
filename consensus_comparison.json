@@ -1,0 +1,56 @@
+{
+  "pob": {
+    "consensus_type": "pob",
+    "blocks_mined": 180,
+    "transactions_processed": 736,
+    "invalid_transactions": 250,
+    "elapsed_time": 180.63,
+    "blocks_per_second": 0.9965,
+    "transactions_per_second": 4.0745,
+    "average_block_time": 0.2868,
+    "validator_selections": {
+      "1": 91,
+      "0": 82,
+      "4": 7
+    },
+    "fairness_score": 0.3724,
+    "security_score": 0.6603,
+    "speed_score": 0.9965
+  },
+  "pos": {
+    "consensus_type": "pos",
+    "blocks_mined": 180,
+    "transactions_processed": 696,
+    "invalid_transactions": 227,
+    "elapsed_time": 120.41,
+    "blocks_per_second": 1.4948,
+    "transactions_per_second": 5.7801,
+    "average_block_time": 0.3086,
+    "validator_selections": {
+      "3": 96,
+      "2": 17,
+      "0": 10,
+      "1": 48,
+      "4": 9
+    },
+    "fairness_score": 0.0779,
+    "security_score": 0.6739,
+    "speed_score": 1.0
+  },
+  "pow": {
+    "consensus_type": "pow",
+    "blocks_mined": 180,
+    "transactions_processed": 714,
+    "invalid_transactions": 251,
+    "elapsed_time": 60.21,
+    "blocks_per_second": 2.9894,
+    "transactions_per_second": 11.8581,
+    "average_block_time": 0.2976,
+    "validator_selections": {
+      "4": 180
+    },
+    "fairness_score": 0.0,
+    "security_score": 0.6485,
+    "speed_score": 1.0
+  }
+}
