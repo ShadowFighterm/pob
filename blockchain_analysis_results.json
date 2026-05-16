@@ -1,0 +1,58 @@
+{
+  "analysis_date": "2026-05-16 10:37:30.477863",
+  "blockchain": "Ethereum Sepolia",
+  "blocks_analyzed": 51,
+  "validators_found": 16,
+  "pow_metrics": {
+    "concentration_index": 0.08804306036139947,
+    "top_validator_percentage": 13.725490196078432
+  },
+  "pob_metrics": {
+    "concentration_index": 0.06270710010462931,
+    "fairness_improvement_percent": 28.77678280692541
+  },
+  "top_validators_pow": [
+    {
+      "address": "0x3826539cbd8d68dcf119e80b994557b4278cec9f",
+      "blocks": 7
+    },
+    {
+      "address": "0xc6e2459991bfe27cca6d86722f35da23a1e4cb97",
+      "blocks": 7
+    },
+    {
+      "address": "0xe276bc378a527a8792b353cdca5b5e53263dfb9e",
+      "blocks": 6
+    },
+    {
+      "address": "0x13cb6ae34a13a0977f4d7101ebc24b87bb23f0d5",
+      "blocks": 5
+    },
+    {
+      "address": "0x0000000000000000000000000000000000000000",
+      "blocks": 4
+    }
+  ],
+  "top_validators_pob": [
+    {
+      "address": "0x0000000000000000000000000000000000000000",
+      "score": 1.821938775510204
+    },
+    {
+      "address": "0x3826539cbd8d68dcf119e80b994557b4278cec9f",
+      "score": 1.8158151765589783
+    },
+    {
+      "address": "0x9b984d5a03980d8dc0a24506c968465424c81dbe",
+      "score": 1.8152650822669103
+    },
+    {
+      "address": "0xe276bc378a527a8792b353cdca5b5e53263dfb9e",
+      "score": 1.8135785007072136
+    },
+    {
+      "address": "0xc6e2459991bfe27cca6d86722f35da23a1e4cb97",
+      "score": 1.8105462822458271
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "address": "0x7d1d91FF1CF4C2D65Cca5D6eC9ed91D2e882CE7E",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "ValidatorDeactivated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "ValidatorRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "valid_txs",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "invalid_txs",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "behavior_score",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "ValidatorUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator_address",
+          "type": "address"
+        }
+      ],
+      "name": "deactivateValidator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllValidators",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "count",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTopValidators",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getValidatorCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator_address",
+          "type": "address"
+        }
+      ],
+      "name": "getValidatorMetrics",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "validator_address",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "valid_transactions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "invalid_transactions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "uptime_score",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "behavior_score",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reputation_score",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "last_updated",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "is_active",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct ValidatorReputation.ValidatorMetrics",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator_address",
+          "type": "address"
+        }
+      ],
+      "name": "isValidatorActive",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator_address",
+          "type": "address"
+        }
+      ],
+      "name": "registerValidator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "validator_address",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "valid_txs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "invalid_txs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "behavior_score",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "uptime_score",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateValidatorMetrics",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "validator_count",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "validator_list",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "validators",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "validator_address",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "valid_transactions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "invalid_transactions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "uptime_score",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "behavior_score",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reputation_score",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "last_updated",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "is_active",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "network": "sepolia",
+  "chain_id": 11155111
+}
